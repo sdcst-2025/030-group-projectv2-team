@@ -10,6 +10,15 @@ def title():
     # Author: Copper
     # Modified:
     # title
+    
+    return None
+
+def instructions():
+    # Will display instructions
+    # input parameters: none needed
+    # output parameters: None
+    # Author:
+    # Modified:
     print("Welcome To The Geometry/Graphing Calculator!")
     print("This Calculator Has Eight Functions")
     print("Enter \"1\" To Calculate The Area Of A Rectangle")
@@ -21,14 +30,22 @@ def title():
     print("Enter \"7\" To Calculate The Slope Of A Graph At A Specific Point")
     print("Enter \"8\" To Calculate The Area Under A Function At An Interval")
     MILESSANDERS = input("What Would You Like To Do? => ")
-    return None
-
-def instructions():
-    # Will display instructions
-    # input parameters: none needed
-    # output parameters: None
-    # Author:
-    # Modified:
+    if MILESSANDERS == 1:
+        rectangle()
+    elif MILESSANDERS == 2:
+        rectangularprism()
+    elif MILESSANDERS == 3:
+        triangle()
+    elif MILESSANDERS == 4:
+        triangularprism()
+    elif MILESSANDERS == 5:
+        circle()
+    elif MILESSANDERS == 6:
+        sphere()
+    elif MILESSANDERS == 7:
+        slope()
+    elif MILESSANDERS == 8:
+        accumulation()
     return None
 
 
@@ -44,5 +61,25 @@ def main():
         # keep giving options to choose menu options until they choose to exit
         pass
 
+def rectangle():
+
+def rectangularprism():
+
+def triangle():
+
+def triangularprism():
+
+def circle():
+
+def sphere():
+
+def slope():
+
+def accumulation():
+
+
+
+
 if __name__ == "__main__":
     main()
+
