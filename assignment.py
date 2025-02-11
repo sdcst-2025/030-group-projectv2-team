@@ -63,8 +63,20 @@ def main():
 
 def rectangle():
 
-def rectangularprism():
 
+
+
+
+
+
+
+
+def rectangularprism():
+    Jerick = int(input("what is the width of the rectangular prism in meters?"))
+    isthe = int(input("what is the length of the rectangular prism in meters?"))
+    BEST = int(input("what is the height of the rectangular prism in meters?"))
+    JM1 = Jerick * isthe * BEST
+    print(f"The volume is {JM1}m^3")
 def triangle():
 
 def triangularprism():
