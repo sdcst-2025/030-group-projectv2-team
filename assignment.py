@@ -69,7 +69,7 @@ def rectangle():
     milesinstructions = int(input("What Is The Width Of Your Rectangle? => "))
     jericksinstructions = int(input("What Is The Length Of Your Rectangle? => "))
     hotasthesumma = milesinstructions * jericksinstructions
-    return hotasthesumma
+    prin(f"The area is {hotasthesumma}m^2")
 
 def rectangularprism():
     Jerick = int(input("what is the width of the rectangular prism in meters?"))
@@ -83,8 +83,8 @@ def triangle():
     superman = int(input("How Wide Is The Base Of Your Triangle? = >"))
     wonderwoman = int(input("What Is The Height Of Your Triangle? => "))
     hero = (superman * wonderwoman) / 2
-    print(f"The Area Is {hero} m^2")
-    
+    print(f"The Area Is {hero}m^2")
+
 import math
 
 def triangularprism():
@@ -92,8 +92,13 @@ def triangularprism():
     Bonjour = int(input("What Is The Height Of Your Triangle? => "))
     Hola = int(input("What Is The Length Of Your Triangular Prism? => "))
     Salut = 0.5 * Hello * Bonjour * Hola
-    print(f"The Volume is {Hola}m^3")
+    print(f"The Volume is {Salut}m^3")
+
 def circle():
+
+    readyornot = int(input("what is the radius of your circle? => "))
+    coolbeans = math.pi * (readyornot ** 2)
+    print(f"The area is {coolbeans}m^2")
 
 def sphere():
 
