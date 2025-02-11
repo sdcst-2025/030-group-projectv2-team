@@ -80,6 +80,11 @@ def rectangularprism():
 
 def triangle():
 
+    superman = int(input("How Wide Is The Base Of Your Triangle? = >"))
+    wonderwoman = int(input("What Is The Height Of Your Triangle? => "))
+    hero = (superman * wonderwoman) / 2
+    print(f"The Area Is {hero} m^2")
+    
 def triangularprism():
 
 def circle():
