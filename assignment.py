@@ -73,6 +73,19 @@ def rectangle():
 
 def rectangularprism():
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 def triangle():
 
 def triangularprism():
