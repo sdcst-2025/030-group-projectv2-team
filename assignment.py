@@ -85,8 +85,14 @@ def triangle():
     hero = (superman * wonderwoman) / 2
     print(f"The Area Is {hero} m^2")
     
-def triangularprism():
+import math
 
+def triangularprism():
+    Hello = int(input("How Wide Is The Base Of Your Triangle? = >"))
+    Bonjour = int(input("What Is The Height Of Your Triangle? => "))
+    Hola = int(input("What Is The Length Of Your Triangular Prism? => "))
+    Salut = 0.5 * Hello * Bonjour * Hola
+    print(f"The Volume is {Hola}m^3")
 def circle():
 
 def sphere():
