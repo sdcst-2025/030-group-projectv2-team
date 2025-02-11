@@ -72,12 +72,19 @@ def rectangle():
     return hotasthesumma
 
 def rectangularprism():
-    Jerick = int(input("what is the width of the rectangular prism in meters?"))
-    isthe = int(input("what is the length of the rectangular prism in meters?"))
-    BEST = int(input("what is the height of the rectangular prism in meters?"))
+
+    Jerick = int(input("What Is The Width Of The Rectangular Prism In Meters? => "))
+    isthe = int(input("What Is The Length Of The Rectangular Prism In Meters? => "))
+    BEST = int(input("What Is The Height Of The Rectangular Prism In Meters? => "))
     JM1 = Jerick * isthe * BEST
     print(f"The volume is {JM1}m^3")
+
 def triangle():
+
+    superman = int(input("How Wide Is The Base Of Your Triangle? = >"))
+    wonderwoman = int(input("What Is The Height Of Your Triangle? => "))
+    hero = (superman * wonderwoman) / 2
+    return hero
 
 def triangularprism():
 
