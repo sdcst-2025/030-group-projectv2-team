@@ -66,22 +66,10 @@ def main():
 
 def rectangle():
 
-<<<<<<< HEAD
-=======
     milesinstructions = int(input("What Is The Width Of Your Rectangle? => "))
     jericksinstructions = int(input("What Is The Length Of Your Rectangle? => "))
     hotasthesumma = milesinstructions * jericksinstructions
     return hotasthesumma
-
-def rectangularprism():
->>>>>>> f095abb48cae1f0c6cafa04719ff016ad8e273d2
-
-
-
-
-
-
-
 
 def rectangularprism():
     Jerick = int(input("what is the width of the rectangular prism in meters?"))
