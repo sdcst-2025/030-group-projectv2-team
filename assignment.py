@@ -101,9 +101,17 @@ def circle():
     print(f"The area is {coolbeans}m^2")
 
 def sphere():
+    How = int(input("what is the radius of your sphere? => "))
+    Are = (4/3)*math.pi*How**3
+    You = round(Are,2)
+    print(f"The Volume of your sphere is {You}m^3")
 
 def cone():
-
+    Creep = int(input("what is the radius of your base? => "))
+    NoSurprises = int(input("what is the height of your cone? => "))
+    KarmaPolice = math.pi*Creep**2*(NoSurprises/3)
+    Radio = round(KarmaPolice,2)
+    print(f"The Volume of your cone is {Radio}m^3")
 def slope():
 
 
