@@ -65,7 +65,6 @@ def main():
         pass
 
 def rectangle():
-
     milesinstructions = int(input("What Is The Width Of Your Rectangle? => "))
     jericksinstructions = int(input("What Is The Length Of Your Rectangle? => "))
     hotasthesumma = milesinstructions * jericksinstructions
@@ -79,7 +78,6 @@ def rectangularprism():
     print(f"The Volume Is {JM1}m^3")
 
 def triangle():
-
     superman = int(input("How Wide Is The Base Of Your Triangle? = >"))
     wonderwoman = int(input("What Is The Height Of Your Triangle? => "))
     hero = (superman * wonderwoman) / 2
@@ -95,25 +93,24 @@ def triangularprism():
     print(f"The Volume Is {Salut}m^3")
 
 def circle():
-
     readyornot = int(input("What Is The Radius Of Your Circle? => "))
     coolbeans = math.pi * (readyornot ** 2)
     print(f"The Area Is {coolbeans}m^2")
 
 def sphere():
-    How = int(input("what is the radius of your sphere? => "))
+    How = int(input("What Is The Radius Of Your Sphere? => "))
     Are = (4/3)*math.pi*How**3
     You = round(Are,2)
-    print(f"The Volume of your sphere is {You}m^3")
+    print(f"The Volume Of Your Sphere Is {You}m^3")
 
 def cone():
-    Creep = int(input("what is the radius of your base? => "))
-    NoSurprises = int(input("what is the height of your cone? => "))
+    Creep = int(input("What Is The Radius Of Your Base? => "))
+    NoSurprises = int(input("What Is The Height Of Your Cone? => "))
     KarmaPolice = math.pi*Creep**2*(NoSurprises/3)
     Radio = round(KarmaPolice,2)
     print(f"The Volume of your cone is {Radio}m^3")
-def slope():
 
+def slope():
     delf0 = int(input("What Is The Y-value At Your First Point"))
     delf1 = int(input("what Is The X-value At Your First Point"))
     delf2 = int(input("what Is The Y-value At Your Second Point"))
