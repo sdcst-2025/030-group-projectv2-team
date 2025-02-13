@@ -2,6 +2,8 @@
 # Volume Calculator
 # Feel free to rename your variables
 
+keepgoing = True
+
 def title():
     # Will display a title screen
     # input parameters: none needed
@@ -9,7 +11,35 @@ def title():
     # Author: Copper
     # Modified:
     # title
-    
+    while keepgoing == True:
+        print("This Is The Geometrical/Graphical Calculator")
+        print(" ")
+        print("By Carson And Jeremy Holmes")
+        print(" ")
+        print("___________________________________________________________________________________________________________________________________________________")
+        print(" ")
+        miles = int(input("What Would You Like To Do? (0-8, press 0 for instructions) => "))
+        try:
+            if miles == 0:
+              instructions()
+            elif miles == 1:
+                rectangle()
+            elif miles == 2:
+                rectangularprism()
+            elif miles == 3:
+                triangle()
+            elif miles == 4:
+                triangularprism()
+            elif miles == 5:
+                circle()
+            elif miles == 6:
+                sphere()
+            elif miles == 7:
+                cone()
+            elif miles == 8:
+                slope()
+        except:
+            print("invalid command")
     return None
 
 def instructions():
@@ -18,36 +48,37 @@ def instructions():
     # output parameters: None
     # Author:
     # Modified:
-    print("Welcome To The Geometry/Graphing Calculator!")
-    print("This Calculator Has Eight Functions")
-    print("Enter \"1\" To Calculate The Area Of A Rectangle")
-    print("Enter \"2\" To Calculate The Volume Of A Rectangular Prism")
-    print("Enter \"3\" To Calculate The Area Of A Triangle")
-    print("Enter \"4\" To Calculate The Volume Of A Triangular Prism")
-    print("Enter \"5\" To Calculate The Area Of A Circle")
-    print("Enter \"6\" To Calculate The Volume Of A Sphere")
-    print("Enter \"7\" To Calculate The Volume Of A Cone")
-    print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Range")
-    MILESSANDERS = input("What Would You Like To Do? => ")
-    try:
-        if MILESSANDERS == 1:
-            rectangle()
-        elif MILESSANDERS == 2:
-            rectangularprism()
-        elif MILESSANDERS == 3:
-            triangle()
-        elif MILESSANDERS == 4:
-            triangularprism()
-        elif MILESSANDERS == 5:
-            circle()
-        elif MILESSANDERS == 6:
-            sphere()
-        elif MILESSANDERS == 7:
-            cone()
-        elif MILESSANDERS == 8:
-            slope()
-    except:
-        print("invalid command")
+    while keepgoing == True:
+        print("Welcome To The Geometry/Graphing Calculator!")
+        print("This Calculator Has Eight Functions")
+        print("Enter \"1\" To Calculate The Area Of A Rectangle")
+        print("Enter \"2\" To Calculate The Volume Of A Rectangular Prism")
+        print("Enter \"3\" To Calculate The Area Of A Triangle")
+        print("Enter \"4\" To Calculate The Volume Of A Triangular Prism")
+        print("Enter \"5\" To Calculate The Area Of A Circle")
+        print("Enter \"6\" To Calculate The Volume Of A Sphere")
+        print("Enter \"7\" To Calculate The Volume Of A Cone")
+        print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Range")
+        MILESSANDERS = input("What Would You Like To Do? => ")
+        try:
+            if MILESSANDERS == 1:
+                rectangle()
+            elif MILESSANDERS == 2:
+                rectangularprism()
+            elif MILESSANDERS == 3:
+                triangle()
+            elif MILESSANDERS == 4:
+                triangularprism()
+            elif MILESSANDERS == 5:
+                circle()
+            elif MILESSANDERS == 6:
+                sphere()
+            elif MILESSANDERS == 7:
+                cone()
+            elif MILESSANDERS == 8:
+                slope()
+        except:
+            print("invalid command")
     return None
 
 
@@ -111,12 +142,12 @@ def cone():
     print(f"The Volume of your cone is {Radio}m^3")
 
 def slope():
-    delf0 = int(input("What Is The Y-value At Your First Point"))
-    delf1 = int(input("what Is The X-value At Your First Point"))
-    delf2 = int(input("what Is The Y-value At Your Second Point"))
-    delf3 = int(input("what Is The X-value At Your Second Point"))
+    delf0 = int(input("What Is The Y-value At Your First Point? => "))
+    delf1 = int(input("what Is The X-value At Your First Point? => "))
+    delf2 = int(input("what Is The Y-value At Your Second Point? => "))
+    delf3 = int(input("what Is The X-value At Your Second Point? => "))
     delfexam = (delf2 - delf0) / (delf3 - delf1)
-    print(f"The Slope Is {delfexam}m/s")
+    print(f"The Slope Is {delfexam}")
 
 if __name__ == "__main__":
     main()
