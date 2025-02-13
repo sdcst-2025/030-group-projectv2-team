@@ -27,7 +27,7 @@ def instructions():
     print("Enter \"5\" To Calculate The Area Of A Circle")
     print("Enter \"6\" To Calculate The Volume Of A Sphere")
     print("Enter \"7\" To Calculate The Volume Of A Cone")
-    print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Point")
+    print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Range")
     MILESSANDERS = input("What Would You Like To Do? => ")
     try:
         if MILESSANDERS == 1:
@@ -69,14 +69,14 @@ def rectangle():
     milesinstructions = int(input("What Is The Width Of Your Rectangle? => "))
     jericksinstructions = int(input("What Is The Length Of Your Rectangle? => "))
     hotasthesumma = milesinstructions * jericksinstructions
-    prin(f"The area is {hotasthesumma}m^2")
+    print(f"The Area Is {hotasthesumma}m^2")
 
 def rectangularprism():
-    Jerick = int(input("what is the width of the rectangular prism in meters?"))
-    isthe = int(input("what is the length of the rectangular prism in meters?"))
-    BEST = int(input("what is the height of the rectangular prism in meters?"))
+    Jerick = int(input("What Is The Width Of The Rectangular Prism In Meters?"))
+    isthe = int(input("What Is The Length Of The Rectangular Prism In Meters?"))
+    BEST = int(input("What Is The Height Of The Rectangular Prism In Meters?"))
     JM1 = Jerick * isthe * BEST
-    print(f"The volume is {JM1}m^3")
+    print(f"The Volume Is {JM1}m^3")
 
 def triangle():
 
@@ -92,13 +92,13 @@ def triangularprism():
     Bonjour = int(input("What Is The Height Of Your Triangle? => "))
     Hola = int(input("What Is The Length Of Your Triangular Prism? => "))
     Salut = 0.5 * Hello * Bonjour * Hola
-    print(f"The Volume is {Salut}m^3")
+    print(f"The Volume Is {Salut}m^3")
 
 def circle():
 
-    readyornot = int(input("what is the radius of your circle? => "))
+    readyornot = int(input("What Is The Radius Of Your Circle? => "))
     coolbeans = math.pi * (readyornot ** 2)
-    print(f"The area is {coolbeans}m^2")
+    print(f"The Area Is {coolbeans}m^2")
 
 def sphere():
 
@@ -106,8 +106,12 @@ def cone():
 
 def slope():
 
-
-
+    delf0 = int(input("What Is The Y-value At Your First Point"))
+    delf1 = int(input("what Is The X-value At Your First Point"))
+    delf2 = int(input("what Is The Y-value At Your Second Point"))
+    delf3 = int(input("what Is The X-value At Your Second Point"))
+    delfexam = (delf2 - delf0) / (delf3 - delf1)
+    print(f"The Slope Is {delfexam}m/s")
 
 if __name__ == "__main__":
     main()
