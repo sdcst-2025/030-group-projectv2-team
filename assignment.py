@@ -26,8 +26,8 @@ def instructions():
     print("Enter \"4\" To Calculate The Volume Of A Triangular Prism")
     print("Enter \"5\" To Calculate The Area Of A Circle")
     print("Enter \"6\" To Calculate The Volume Of A Sphere")
-    print("Enter \"7\" To Calculate The Slope Of A Graph At A Specific Point")
-    print("Enter \"8\" To Calculate The Area Under A Function At An Interval")
+    print("Enter \"7\" To Calculate The Volume Of A Cone")
+    print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Point")
     MILESSANDERS = input("What Would You Like To Do? => ")
     try:
         if MILESSANDERS == 1:
@@ -43,9 +43,9 @@ def instructions():
         elif MILESSANDERS == 6:
             sphere()
         elif MILESSANDERS == 7:
-            slope()
+            cone()
         elif MILESSANDERS == 8:
-            accumulation()
+            slope()
     except:
         print("invalid command")
     return None
@@ -102,9 +102,10 @@ def circle():
 
 def sphere():
 
+def cone():
+
 def slope():
 
-def accumulation():
 
 
 
