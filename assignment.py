@@ -11,35 +11,34 @@ def title():
     # Author: Copper
     # Modified:
     # title
-    while keepgoing == True:
-        print("This Is The Geometrical/Graphical Calculator")
-        print(" ")
-        print("By Carson And Jeremy Holmes")
-        print(" ")
-        print("___________________________________________________________________________________________________________________________________________________")
-        print(" ")
-        miles = int(input("What Would You Like To Do? (0-8, press 0 for instructions) => "))
-        try:
-            if miles == 0:
-              instructions()
-            elif miles == 1:
-                rectangle()
-            elif miles == 2:
-                rectangularprism()
-            elif miles == 3:
-                triangle()
-            elif miles == 4:
-                triangularprism()
-            elif miles == 5:
-                circle()
-            elif miles == 6:
-                sphere()
-            elif miles == 7:
-                cone()
-            elif miles == 8:
-                slope()
-        except:
-            print("invalid command")
+    
+    print("This Is The Geometrical/Graphical Calculator")
+    print(" ")
+    print("By Carson And Jeremy Holmes")
+    print(" ")
+    print("___________________________________________________________________________________________________________________________________________________")
+    print(" ")
+    miles = int(input("What Would You Like To Do? (0-8, press 0 for instructions) => "))
+        
+    if miles == 0:
+      instructions()
+    elif miles == 1:
+        rectangle()
+    elif miles == 2:
+        rectangularprism()
+    elif miles == 3:
+        triangle()
+    elif miles == 4:
+        triangularprism()
+    elif miles == 5:
+        circle()
+    elif miles == 6:
+        sphere()
+    elif miles == 7:
+        cone()
+    elif miles == 8:
+        slope()
+    main()    
     return None
 
 def instructions():
@@ -48,37 +47,37 @@ def instructions():
     # output parameters: None
     # Author:
     # Modified:
-    while keepgoing == True:
-        print("Welcome To The Geometry/Graphing Calculator!")
-        print("This Calculator Has Eight Functions")
-        print("Enter \"1\" To Calculate The Area Of A Rectangle")
-        print("Enter \"2\" To Calculate The Volume Of A Rectangular Prism")
-        print("Enter \"3\" To Calculate The Area Of A Triangle")
-        print("Enter \"4\" To Calculate The Volume Of A Triangular Prism")
-        print("Enter \"5\" To Calculate The Area Of A Circle")
-        print("Enter \"6\" To Calculate The Volume Of A Sphere")
-        print("Enter \"7\" To Calculate The Volume Of A Cone")
-        print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Range")
-        MILESSANDERS = input("What Would You Like To Do? => ")
-        try:
-            if MILESSANDERS == 1:
-                rectangle()
-            elif MILESSANDERS == 2:
-                rectangularprism()
-            elif MILESSANDERS == 3:
-                triangle()
-            elif MILESSANDERS == 4:
-                triangularprism()
-            elif MILESSANDERS == 5:
-                circle()
-            elif MILESSANDERS == 6:
-                sphere()
-            elif MILESSANDERS == 7:
-                cone()
-            elif MILESSANDERS == 8:
-                slope()
-        except:
-            print("invalid command")
+    
+    print("Welcome To The Geometry/Graphing Calculator!")
+    print("This Calculator Has Eight Functions")
+    print("Enter \"1\" To Calculate The Area Of A Rectangle")
+    print("Enter \"2\" To Calculate The Volume Of A Rectangular Prism")
+    print("Enter \"3\" To Calculate The Area Of A Triangle")
+    print("Enter \"4\" To Calculate The Volume Of A Triangular Prism")
+    print("Enter \"5\" To Calculate The Area Of A Circle")
+    print("Enter \"6\" To Calculate The Volume Of A Sphere")
+    print("Enter \"7\" To Calculate The Volume Of A Cone")
+    print("Enter \"8\" To Calculate The Slope Of A Graph At A Specific Range")
+    MILESSANDERS = input("What Would You Like To Do? => ")
+
+    if MILESSANDERS == 1:
+        rectangle()
+    elif MILESSANDERS == 2:
+        rectangularprism()
+    elif MILESSANDERS == 3:
+        triangle()
+    elif MILESSANDERS == 4:
+        triangularprism()
+    elif MILESSANDERS == 5:
+        circle()
+    elif MILESSANDERS == 6:
+        sphere()
+    elif MILESSANDERS == 7:
+        cone()
+    elif MILESSANDERS == 8:
+        slope()
+        
+        main()
     return None
 
 
