@@ -152,7 +152,10 @@ def slope():
     delf1 = float(input("what Is The X-value At Your First Point? => "))
     delf2 = float(input("what Is The Y-value At Your Second Point? => "))
     delf3 = float(input("what Is The X-value At Your Second Point? => "))
-    delfexam = (delf2 - delf0) / (delf3 - delf1)
+    if delf2 - delf0 == 0:
+        delfexam = 0
+    else:
+        delfexam = (delf2 - delf0) / (delf3 - delf1)
     delfexam = round(delfexam , 2)
     print(f"The Slope Is {delfexam}")
 
